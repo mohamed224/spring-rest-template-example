@@ -6,12 +6,14 @@ import com.example.spring.resttemplate.model.PurchaseOrder;
 import com.example.spring.resttemplate.service.IPaymentService;
 import com.example.spring.resttemplate.util.Uri;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
+@Service
 public class PaymentService implements IPaymentService {
 
     private PaymentRepository paymentRepository;

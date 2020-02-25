@@ -4,9 +4,11 @@ import com.example.spring.resttemplate.dao.ProductRepository;
 import com.example.spring.resttemplate.model.Product;
 import com.example.spring.resttemplate.service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ProductService implements IProductService {
 
     private ProductRepository productRepository;

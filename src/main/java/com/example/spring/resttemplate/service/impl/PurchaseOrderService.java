@@ -6,11 +6,13 @@ import com.example.spring.resttemplate.model.PurchaseOrder;
 import com.example.spring.resttemplate.service.IPurchaseOrderService;
 import com.example.spring.resttemplate.util.Uri;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Date;
 import java.util.List;
 
+@Service
 public class PurchaseOrderService implements IPurchaseOrderService {
 
     private PurchaseOrderRepository purchaseOrderRepository;
